@@ -1,0 +1,66 @@
+@import './variables';
+
+.presentation {
+    background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url('../img/video-section.jpg');
+    height: 90vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 1024px) {
+        height: 60vh;
+    }
+    &-wrapper {
+        width: 75%;
+        height: 50%;
+        color: $WHITE_COLOR;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        position: relative;
+    }
+    &__heading {
+        text-transform: uppercase;
+        font-size: 80px;
+        font-weight: 400;
+        margin-bottom: 18px;
+        line-height: 1;
+        @media screen and (max-width: 1024px) {
+            font-size: 62px;
+        }
+    }
+    &__sub-heading {
+        font-family: 'Cookie', cursive;
+        font-size: 45px;
+        font-weight: 400;
+        @media screen and (max-width: 1024px) {
+            font-size: 35px;
+        }
+    }
+    &__btn {
+        cursor: pointer;
+        position: absolute;
+        bottom: 0;
+        width: 60px;
+        height: 60px;
+        border: none;
+        outline: none;
+        background-color: #fff;
+        border-radius: 50%;
+        transform: translateY(50%);
+        font-size: 16px;
+        color: $BLACK_COLOR;
+        transition: all 0.2s;
+        &:hover {
+            color: #e79d3c;
+            transform: scale(1.1) translateY(45%);
+        }
+    }
+}

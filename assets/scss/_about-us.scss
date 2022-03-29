@@ -1,0 +1,59 @@
+.about-us {
+    margin: 30px auto 180px;
+    width: 60%;
+    text-align: center;
+    color: $BLACK_COLOR;
+    @media screen and (max-width: 1024px) {
+        width: 75%;
+    }
+    @media screen and (max-width: 720px) {
+        margin-bottom: 144px;
+    }
+    &__heading {
+        margin-bottom: 30px;
+        font-size: 25px;
+        letter-spacing: 1.6px;
+        font-weight: 600;
+        @media screen and (max-width: 1024px) {
+            font-size: 19px;
+        }
+        @media screen and (max-width: 720px) {
+            font-size: 13px;
+        }
+    }
+    &__details {
+        font-size: 14px;
+        line-height: 1.6;
+        width: 75%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        @media screen and (max-width: 1024px) {
+            font-size: 11px;
+            width: 75%;
+        }
+        @media screen and (max-width: 720px) {
+            font-size: 10px;
+        }
+    }
+    &__btn {
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        border-bottom: 3px solid #e79d3c;
+        text-transform: uppercase;
+        padding: 5px 12px;
+        font-weight: 700;
+        font-size: 16px;
+        transition: all 0.2s ease;
+        &:hover {
+            color: #e79d3c;
+            transform: translateY(-10%);
+        }
+        @media screen and (max-width: 1024px) {
+            font-size: 13px;
+        }
+        @media screen and (max-width: 720px) {
+            font-size: 11px;
+        }
+    }
+}

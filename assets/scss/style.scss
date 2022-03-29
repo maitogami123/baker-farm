@@ -1,0 +1,19 @@
+@import './header';
+@import './variables';
+@import './food-card';
+@import './about-us';
+@import './hot-offer';
+@import './products';
+@import './presentation';
+@import './testimonial';
+@import './news';
+@import './footer';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', cursive;
+    -webkit-tap-highlight-color: transparent;
+    // overflow-x: hidden;
+}

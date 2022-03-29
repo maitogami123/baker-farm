@@ -1,0 +1,86 @@
+.footer {
+    padding: 80px 0;
+    background-color: #fffaf6;
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: 1024px) {
+        padding: 62px 0;
+    }
+    @media screen and (max-width: 720px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.contact {
+    padding: 50px;
+    margin-right: 100px;
+    border: 2px solid rgba(216,216,216,0.6);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    @media screen and (max-width: 1024px) {
+        margin-right: 76px;
+        padding: 38px;
+    }
+    @media screen and (max-width: 720px) {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    &__heading {
+        font-size: 25px;
+        line-height: 32px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        font-family: 'Lato', cursive;
+        @media screen and (max-width: 1024px) {
+            font-size: 19px;
+        }
+    }
+    &__info {
+        font-size: 17px;
+        font-weight: 700;
+        text-transform: uppercase;
+        @media screen and (max-width: 1024px) {
+            font-size: 13px;
+        }
+        & > a {
+            display: block;
+            text-decoration: none;
+            text-align: left;
+            color: #e9304f;
+            line-height: 20px;
+            font-family: 'Lato', cursive;
+        }
+        &-address {
+            margin-bottom: 20px;
+            font-family: 'Lato', cursive;
+        }
+    }
+}
+
+.copy-right {
+    &__img {
+        height: 280px;
+        @media screen and (max-width: 1024px) {
+            height: 216px;
+        }
+    }
+    &__by {
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 30px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-family: 'Lato', cursive;
+        @media screen and (max-width: 1024px) {
+            font-size: 12px;
+        }
+        @media screen and (max-width: 720px) {
+            text-align: center;
+        }
+    }
+}
